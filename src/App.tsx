@@ -1,5 +1,11 @@
+import PokemonCard from "./components/PokemonCard";
+
 function App() {
-  return <h1>Hello world</h1>;
+  return (
+    <div>
+      <PokemonCard />
+    </div>
+  );
 }
 
 export default App;
