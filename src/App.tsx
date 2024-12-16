@@ -54,26 +54,22 @@ const pokemonList = [
 export default function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
 
-  const handleClick = () => {
-    setPokemonIndex;
-  };
-
   return (
     <>
       <div>
         <nav>
-          {pokemonList.map((pokemon) => (
+          {pokemonList.map((pokemon, i) => (
             <button
               type="button"
               key={pokemon.name}
               pokemon={pokemon.name}
-              onClick={handleClick}
+              onClick={() => setPokemonIndex(i)}
             >
               {pokemon.name}
             </button>
           ))}
         </nav>
-        {/* <PokemonCard key={pokemonIndex} pokemon={pokemonList[pokemonIndex]} /> */}
+        <PokemonCard pokemon={pokemonList[pokemonIndex]} />
       </div>
     </>
   );
