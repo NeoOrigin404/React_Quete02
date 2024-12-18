@@ -31,26 +31,6 @@ const pokemonList = [
   },
 ];
 
-/* <div>
-        {pokemonIndex > 0 ? (
-          <button type="button" onClick={handleClick}>
-            Précédent
-          </button>
-        ) : null}
-        {pokemonIndex < pokemonList.length - 1 ? (
-          <button type="button" onClick={handleClickPlus}>
-            Suivant
-          </button>
-        ) : null}
-      </div> */
-
-/*  const handleClick = () => {
-    setPokemonIndex(pokemonIndex - 1);
-  };
-  const handleClickPlus = () => {
-    setPokemonIndex(pokemonIndex + 1);
-  }; */
-
 export default function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
 
