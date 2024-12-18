@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 interface Pokemon {
   name: string;
   imgSrc?: string;
