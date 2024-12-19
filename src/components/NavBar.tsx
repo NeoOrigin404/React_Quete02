@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 interface Pokemon {
   name: string;
   imgSrc?: string;
@@ -17,7 +15,12 @@ export default function NavBar({ pokemonList, setPokemonIndex }: NavBarProps) {
         <button
           key={pokemon.name}
           type="button"
-          onClick={() => setPokemonIndex(index)}
+          onClick={() => {
+            if (pokemon.name === "pikachu") {
+              alert("Pika Pika !!");
+            }
+            setPokemonIndex(index);
+          }}
         >
           {pokemon.name}
         </button>
